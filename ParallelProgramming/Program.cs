@@ -8,29 +8,16 @@ namespace ParallelProgramming
     {
         static void Main(string[] args)
         {
-            List<string> numbers = new List<string>();
-            numbers.Add("1");
-            numbers.Add("2");
-            numbers.Add("3");
-            numbers.Add("4");
-            numbers.Add("5");
-            numbers.Add("6");
-            numbers.Add("7");
-            numbers.Add("8");
-            numbers.Add("9");
-            numbers.Add("10");
-            numbers.Add("11");
-            numbers.Add("12");
-            numbers.Add("13");
-            numbers.Add("14");
-            numbers.Add("15");
-            numbers.Add("16");
-            numbers.Add("17");
-            numbers.Add("18");
+            List<string> names = new List<string>();
+            names.Add("1. Juan");
+            names.Add("2. Fernando");
+            names.Add("3. Elena");
+            names.Add("4. Rebeca");
+            names.Add("5. Francisco");
 
-            Parallel.ForEach(numbers, number =>
+            Parallel.ForEach(names, name =>
             {
-                Console.WriteLine(number);
+                Console.WriteLine(name);
             });
 
         }
